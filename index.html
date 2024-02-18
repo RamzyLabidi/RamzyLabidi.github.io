@@ -2,140 +2,279 @@
 
 <html>
 	<head>
-		<title>Carthage AI</title>
+		<title>Ramzy Labidi</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+		/* Add your custom styles here for the video gallery */
+		.video-container {
+			position: relative;
+			margin: 10px;
+			overflow: hidden;
+			width: 300px;
+			height: 200px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.video-container video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.video-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: rgba(0, 0, 0, 0.5);
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		.video-container:hover .video-overlay {
+			opacity: 1;
+		}
+
+		.play-button {
+			color: white;
+			font-size: 24px;
+			cursor: pointer;
+		}
+	</style>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<!-- Header -->
+			<header id="header">
+				<h1>AI/IT engineer-Dj-Teacher </h1>
+				<nav>
+					<ul>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#one">What I Do</a></li>
+						<li><a href="#two">Who I Am</a></li>
+						<li><a href="#work">My Work</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Carthage AI<br />
-						</h1>
-						<p>“This job is a great scientific adventure. But it's also a great human adventure.”</br>
-							—Fabiola Gianotti, Higgs Boson physicist</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Carthage AI</a>
-					</header>q
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Services</a></li>
-                            <li ><a href="about.html">About</a></li>
-                            <li ><a href="index.html">Blog comming soon</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/ramzyl%C3%A4bidi/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/RamzyLabidi" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a >Computer Vision and NLP Model training and deployment<br />
-										 </a></h2>
-									</header>
-									<a  class="image fit"><img src="images/CV.jpg" alt="" /></a>
-									<p>Whether you're looking to enhance image recognition, extract valuable information from unstructured text, streamline data processing with efficient pipelines, or deploy AI models for real-world impact, we've got you covered. </p>
-									
-								</article>
-								<article>
-									<header>
-										<h2><a>GEN AI finetunning and alignment<br />
-										</a></h2>
-									</header>
-									<a class="image fit"><img src="images/4.2.png" alt="" /></a>
-									<p>My services in fine-tuning Gen AI models and aligning them with Proximal Policy Optimization (PPO) and QLORA ensure that your AI systems operate at their desired performance. With meticulous attention to detail in the data and a commitment to precision, AI solutions reach new horizons of alignment.</p>
-									
-								</article>
-								<article>
-									<header>
-										<h2><a >Straight to the web<br />
-										</a></h2>
-									</header>
-									<a  class="image fit"><img src="images/wd.png" alt="" /></a>
-									<p>As a multifaceted data scientist, I specialize in both data analysis and web development, 
-										leveraging Azure, Docker, and AWS. I bring machine learning models to life through 
-										user-friendly web applications, turning data into actionable insights that drive your business forward.</p>
-									
-								</article>
-								<article>
-									<header>
-										<h2><a >Data<br />
-										science</a></h2>
-									</header>
-									<a  class="image fit"><img src="images/data_analysis.png" alt="" /></a>
-									<p>I specialize in data analytics, offering end-to-end solutions for informed decision-making. From data collection to modeling to deployment and MLops, I provide personalized 
-										strategies to unlock your data's potential. Elevate your business with data-driven success. </p>
-									
-								</article>
-								
-								
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Based in</h3>
-								<p>Amsterdam<br />
-								</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a >(+31) 6422-67551</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a >Ramzylabidi@carthageai.nl</a> <br/>
-							
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-								<li><a href="https://github.com/RamzyLabidi" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.kaggle.com/ramzylabidi/code" target="_blank" class="icon brands alt fa-kaggle"><span class="label">Kaggle</span></a></li>
-								
-								
-								
-								</ul>
-							</section>
-						</section>
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content">
+					<header>
+						<h2>Welcome</h2>
+					</header>
+					<p>“This job is a great scientific adventure. But it's also a great human adventure.” —Fabiola Gianotti, Higgs Boson physicist</p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
 					</footer>
+				</div>
+			</section>
 
-				
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>What I Do</h2>
+					</header>
+					<p>Embarking on a journey as a dedicated Engineer,
+						my path was driven by a profound passion for Technology. Along this journey, 
+						I've cultivated a commitment to excellence, my expertise spans the latest advancements in machine learning, 
+						data-driven innovation, and effective multitasking, with a special affinity for LLMs, MLops, and DevOps.
+						 
+						</p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
 
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Who I Am</h2>
+					</header>
+					<p>
+						I'm fascinated by physics, astronomy, and the myriad realms of technology.
+						 With a BSc in AI from VU Amsterdam, 
+						 I've co-founded Sihir: Microsoft Inc hub, navigated data landscapes at multiple companies and thrived on providing AI solutions. 
+						 Now, as an IT engineer, my role is dynamic and security-driven, preventing me from divulging specific details. Beyond tech, you'll find me relishing sea sports, running, and crafting beats in music production. Grateful for diverse experiences shaping my journey, I eagerly embrace the ever-evolving world of technology.</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Some of my Work</h2>
+						<p>As I'm moving to a new chapter in my life. <br/> Some of my work was made to turn a profit, some projects were for Uni back when I was a student, other projects were just for fun and about experimenting, mainly with AI</p>
+					</header>
+
+					<!-- Gallery  -->
+						<div class="gallery">
+							<article class="from-left">
+								<a href="images/fulls/01.png" class="image fit"><img src="images/thumbs/linked_rep.jpg" title="NERC,Topic analysis and Google's Index search Algorithm from scratch" alt="" /></a>
+								<p>NLP</p>
+							</article>
+							
+							<article class="from-right">
+								<a href="images/fulls/end-report-2.png" class="image fit"><img src="images/thumbs/end-report-1.png" title="Penetas cooking Assistant in Prolog" alt="" /></a>
+								<p>Logic Cooking assistant (Pre-GPT)</p>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/EU_LRS.png" class="image fit"><img src="images/thumbs/_18.png" title="Automated LPRS, optimized for camera and robotics software" alt="" /></a>
+								<P>LPRS using Matlab</P>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/swarm_dig.png" class="image fit"><img src="images/thumbs/swarm.png" title="Eco-systems simulation" alt="" /></a>
+							<p>Evolutionary algorithms and swarm robotics</p>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/app.png" class="image fit"><img src="images/thumbs/seek.png" title="Seek: a universal postings app" alt="" /></a>
+								<p>Universal job search app</p>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/DS.png" class="image fit"><img src="images/thumbs/DS2.jpg" title="Example of a data science project" alt="" /></a>
+								<p>Data science and analytics</p>
+							</article>
+							
+						</div>
+
+				</div>
+			</section>
+
+
+			
+				<div class="gallery">
+					<div class="video-container">
+						<video controls>
+							<source src="videos/Penetas.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					
+						<p>Cooking Assistant</p>
+					</div>
+					
+		
+					<div class="video-container">
+						<video controls>
+							<source src="videos/ble.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					
+					</div>
+					<div class="video-container">
+						<video controls>
+							<source src="videos/bandicam 2023-12-05 14-05-43-867.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						
+					</div>
+					<div class="video-container">
+						<video controls>
+							<source src="videos/Vidéo sans titre ‐ Réalisée avec Clipchamp (2).mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					
+					</div>
+					<div class="video-container">
+						<video controls >
+							<source src="videos/teach ‐ Réalisée avec Clipchamp.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					
+					</div>
+					<div class="video-container">
+						<video controls>
+							<source src="videos/voice_clone ‐ Réalisée avec Clipchamp.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					
+					</div>
+					<!-- Repeat the pattern for other videos -->
+				</div>
+		
 			</div>
+		</section>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Ramzy</li>
+					</ul>
+
+			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				document.querySelectorAll('.play-button').forEach(button => {
+					button.addEventListener('click', () => {
+						const video = button.closest('.video-container').querySelector('video');
+						video.play();
+					});
+				});
+			</script>
 	</body>
 </html>
